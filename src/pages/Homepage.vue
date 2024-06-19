@@ -3,9 +3,9 @@
     <!-- header component -->
     <Header />
 
+    <Banner />
     <div class="o-container">
       <!-- content components -->
-      <Banner />
       <h1>Homepage</h1>
     </div>
     <!-- footer component -->
@@ -15,7 +15,7 @@
 <script>
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
-import Banner from '../components/Banner.vue'
+import Banner from '../components/banner.vue'
 export default {
   name: 'Homepage',
   components: {
