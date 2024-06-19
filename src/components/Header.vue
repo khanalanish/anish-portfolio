@@ -2,7 +2,7 @@
   <header>
     <div class="relative z-10">
       <nav class="py-4 md:block hidden">
-        <ul class="flex justify-center text-white">
+        <ul class="flex justify-center text-white text-sm">
           <li class=""><a class="px-5 font-bold hover:text-orange-400" href="#home">Home</a></li>
           <li><a class="px-5 font-bold hover:text-orange-400" href="#about">About</a></li>
           <li><a class="px-5 font-bold hover:text-orange-400" href="#resume">Resume</a></li>
