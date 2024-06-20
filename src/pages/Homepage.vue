@@ -1,10 +1,9 @@
 <template>
-  <div>
+  <div class="relative">
     <!-- header component -->
     <Header />
-
-    <Banner />
     <div class="o-container">
+      <Banner />
       <!-- content components -->
       <h1>Homepage</h1>
     </div>
