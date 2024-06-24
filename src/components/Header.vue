@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="relative z-10">
+    <div class="fixed z-20 top-0 left-0 right-0">
       <nav class="py-4 md:block hidden">
         <ul class="flex justify-center text-white text-sm">
           <li class=""><a class="px-5 font-bold hover:text-orange-400" href="#home">Home</a></li>

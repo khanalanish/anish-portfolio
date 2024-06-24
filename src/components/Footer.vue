@@ -1,9 +1,9 @@
 <template>
   <footer>
-    <div class="nt-auto">
+    <div class="relative">
       <div class="bg-gray-800 text-white w-full pt-16 px-4">
         <div class="flex justify-center mb-6">
-          <ul class="flex gap-x-6">
+          <ul class="flex space-x-6">
             <li class="" v-for="media in social" :key="media.name">
               <a class="w-6 h-6 md:w-10 md:h-10" :href="media.url"
                 ><font-awesome-icon

@@ -27,6 +27,7 @@ export default {
           350: '#A2A2A2',
           400: '#6E6E6E',
           450: '#A1A1A1',
+          600: '#838c95',
           800: '#262626',
           900: '#011928'
         },
@@ -36,8 +37,12 @@ export default {
           400: '#FF6B41',
           500: '#F04B23',
           600: '#DC370F'
-        }
+        },
+        background: '#ebeeee'
       },
+      background: (theme) => ({
+        ...theme('colors')
+      }),
       fontFamily: {
         sans: ['Inter', 'sans-serif']
       }
