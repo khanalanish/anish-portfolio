@@ -1,97 +1,88 @@
 <template>
   <div class="py-10 md:py-16 bg-background">
     <div class="o-container">
-      <h2 class="mb-12 text-base md:text-lg font-semibold">CHECK OUT SOME OF MY WORKS.</h2>
+      <h2 class="mb-12 text-base md:text-lg font-semibold text-center">
+        CHECK OUT SOME OF MY WORKS.
+      </h2>
       <div class="grid grid-cols-12 gap-8">
-        <div v-for="work in projects" :key="work.index" class="col-span-12 md:col-span-3">
-          <div class="overflow-hidden rounded-md aspect-square">
-            <picture>
-              <source media="(max-width:480px)" :srcset="work.imageSrc" />
-              <source media="(max-width:767px)" :srcset="work.imageSrc" />
-              <img
-                :src="work.imageSrc"
-                alt="Background image"
-                class="object-cover object-center w-full h-full"
-              />
-            </picture>
+        <div
+          v-for="work in projects"
+          :key="work.index"
+          class="col-span-12 md:col-span-3 border-2 border-solid shadow-md border-gray-200 rounded-md"
+        >
+          <div class="">
+            <div class="overflow-hidden rounded-md relative pt-half">
+              <a
+                :href="work.link"
+                class="block absolute left-0 right-0 top-0 bottom-0 transition-transform ease-in-out duration-300 transform lg:hover:scale-125"
+                target="_blank"
+              >
+                <div class="content-overlay"></div>
+                <picture>
+                  <source media="(max-width:480px)" :srcset="work.imageSrc" />
+                  <source media="(max-width:767px)" :srcset="work.imageSrc" />
+                  <img
+                    :src="work.imageSrc"
+                    alt="Background image"
+                    class="object-cover object-center w-full h-full"
+                  />
+                </picture>
+              </a>
+            </div>
+            <!-- <div class="p-3">
+              <div class="text-xl font-semibold pt-4">{{ work.title }}</div>
+              <div class="text-gray-600">{{ work.description }}</div>
+            </div> -->
           </div>
-          <div class="text-xl font-semibold pt-4">{{ work.title }}</div>
-          <div class="text-gray-600">{{ work.description }}</div>
-          <a
-            v-if="work.hasLink"
-            :href="work.link"
-            target="blank"
-            class="p-5 bg-gray-700 text-white hover:text-gray-800 hover:bg-white transition ease-linear duration-300 font-semibold rounded-md inline-block mt-4"
-          >
-            <font-awesome-icon :icon="['fas', 'link']" />
-            <span class="pl-2">View Project</span>
-          </a>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import headshot from '../assets/images/headshot.png'
+import loadnepal from '../assets/images/portfolio/loadNepal.png'
+import humanForce from '../assets/images/portfolio/humanForce.png'
+import bingo from '../assets/images/portfolio/bingo.png'
+import hrBlock from '../assets/images/portfolio/hrBlock.png'
+import bossEnergy from '../assets/images/portfolio/bossEnergy.png'
 export default {
   data() {
     return {
       projects: [
         {
-          title: 'Project 1',
-          description: 'This is a project description',
-          imageSrc: '',
+          title: 'Load Nepal',
+          description: '',
+          imageSrc: loadnepal,
           hasLink: true,
-          link: 'https://github.com'
+          link: 'https://loadnepal.com/'
         },
         {
-          title: 'Project 2',
-          description: 'This is a project description',
-          imageSrc: '',
+          title: 'humanforce',
+          description: '',
+          imageSrc: humanForce,
           hasLink: true,
-          link: 'https://github.com'
+          link: 'https://humanforce.com/'
         },
         {
-          title: 'Project 3',
-          description: 'This is a project description',
-          imageSrc: '',
+          title: 'Bingo Industries',
+          description: '',
+          imageSrc: bingo,
           hasLink: true,
-          link: 'https://github.com'
+          link: 'https://www.bingoindustries.com.au/'
         },
         {
-          title: 'Project 4',
-          description: 'This is a project description',
-          imageSrc: '',
+          title: 'HR Block',
+          description: '',
+          imageSrc: hrBlock,
           hasLink: true,
-          link: 'https://github.com'
+          link: 'https://www.hrblock.com.au/'
         },
         {
-          title: 'Project 5',
-          description: 'This is a project description',
-          imageSrc: '',
+          title: 'BOSS Energy',
+          description: '',
+          imageSrc: bossEnergy,
           hasLink: true,
-          link: 'https://github.com'
-        },
-        {
-          title: 'Project 6',
-          description: 'This is a project description',
-          imageSrc: '',
-          hasLink: true,
-          link: 'https://github.com'
-        },
-        {
-          title: 'Project 7',
-          description: 'This is a project description',
-          imageSrc: '',
-          hasLink: true,
-          link: 'https://github.com'
-        },
-        {
-          title: 'Project 8',
-          description: 'This is a project description',
-          imageSrc: '',
-          hasLink: true,
-          link: 'https://github.com'
+          link: 'https://bossenergy.com/'
         }
       ]
     }

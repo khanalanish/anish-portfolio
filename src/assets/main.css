@@ -13,3 +13,14 @@ body {
   font-family: 'Inter', sans-serif;
   @apply text-base text-gray-800;
 }
+
+.c-btn {
+  transition: all 0.3s;
+
+  @apply py-4 px-8 flex items-center justify-center font-semibold leading-none text-sm text-white border-orange-600 border-2 rounded-full outline-none inline-block;
+
+  &:hover,
+  &:focus {
+    @apply border-white;
+  }
+}

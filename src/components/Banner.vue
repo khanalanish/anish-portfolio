@@ -30,6 +30,7 @@
         <div class="absolute z-0 bottom-4 left-1/2 transform -translate-x-1/2">
           <a
             href="#"
+            @click.prevent="handleNextComponent"
             class="bg-white text-gray-800 hover:text-white hover:bg-gray-800 transition duration-300 ease-in-out rounded-full h-10 w-10 flex items-center justify-center"
           >
             <svg
@@ -108,6 +109,9 @@ export default {
           }, 2000)
         }
       }
+    },
+    handleNextComponent() {
+      this.$emit('next-component')
     }
   },
   mounted() {

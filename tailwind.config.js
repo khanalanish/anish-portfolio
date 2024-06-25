@@ -43,6 +43,10 @@ export default {
       background: (theme) => ({
         ...theme('colors')
       }),
+      spacing: {
+        half: '50%',
+        full: '100%'
+      },
       fontFamily: {
         sans: ['Inter', 'sans-serif']
       }

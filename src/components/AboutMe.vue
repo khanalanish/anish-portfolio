@@ -36,14 +36,12 @@
               </div>
             </div>
             <div class="md:w-1/2 mt-6">
-              <a
-                href=""
-                target="blank"
-                class="p-5 bg-gray-700 text-white hover:text-gray-800 hover:bg-white transition ease-linear duration-300 font-semibold rounded-md inline-block"
-              >
-                <font-awesome-icon :icon="['fas', 'download']" />
-                <span class="pl-2">Download Resume</span>
-              </a>
+              <div class="flex">
+                <a href="" target="blank" class="c-btn">
+                  <font-awesome-icon :icon="['fas', 'download']" />
+                  <span class="pl-2">Download Resume</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
