@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-hidden z-10 h-[650px]">
+  <div class="relative z-10 h-[650px]">
     <div class="absolute left-0 right-0 top-0 bottom-0 -z-10">
       <div class="o-container">
         <div class="bg-cover bg-top absolute inset-0 z-0">
@@ -14,7 +14,11 @@
           </picture>
         </div>
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0">
-          <h1 class="text-3xl md:text-7xl font-semibold md:font-bold text-white">Anish Khanal</h1>
+          <h1
+            class="text-3xl md:text-5xl lg:text-7xl font-semibold md:font-bold text-white text-center"
+          >
+            Anish Khanal
+          </h1>
           <div class="text-2xl md:text-3xl font-bold text-center text-white pt-4">
             <span class="typewriter">{{ typedText }}</span>
             <span class="cursor ml-1 w-2 h-6 bg-black inline-block"></span>
@@ -27,7 +31,7 @@
             </li>
           </ul>
         </div>
-        <div class="absolute z-0 bottom-4 left-1/2 transform -translate-x-1/2">
+        <div class="absolute z-30 -bottom-5 left-1/2">
           <a
             href="#"
             @click.prevent="handleNextComponent"

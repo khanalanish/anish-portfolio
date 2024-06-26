@@ -6,8 +6,13 @@
         v-for="history in items"
         :key="history.index"
       >
-        <div class="md:w-3/12 flex flex-col">
-          <h3 class="text-xl uppercase font-semibold pb-4 md:pb-0" v-html="history.title"></h3>
+        <div class="md:w-3/12">
+          <div class="relative">
+            <h3
+              class="text-xl uppercase font-semibold pb-4 md:pb-0 c-title-underline"
+              v-html="history.title"
+            ></h3>
+          </div>
         </div>
         <ul class="md:w-8/12">
           <li class="pb-4 last:pb-8" v-for="list in history.items" :key="list.index">
@@ -113,4 +118,31 @@ export default {
   }
 }
 </script>
-<style scoped></style>
+<style scoped>
+.c-title-underline {
+  display: inline-block;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .c-title-underline::before {
+    content: '';
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #dc370f;
+  }
+}
+@media screen and (min-width: 768px) {
+  .c-title-underline::before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #dc370f;
+  }
+}
+</style>
