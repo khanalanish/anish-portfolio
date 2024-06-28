@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-800 py-10 md:py-16">
+  <div id="contact" class="bg-gray-800 py-10 md:py-16">
     <div class="o-container">
       <div class="flex items-center pb-6">
         <span class="h-16 w-16 hidden md:block text-white">

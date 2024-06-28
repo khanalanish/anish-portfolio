@@ -1,5 +1,5 @@
 <template>
-  <div class="py-10 md:py-16 bg-background">
+  <div id="portfolio" class="py-10 md:py-16 bg-background">
     <div class="o-container">
       <h2 class="mb-12 text-base md:text-lg font-semibold text-center">
         CHECK OUT SOME OF MY WORKS.

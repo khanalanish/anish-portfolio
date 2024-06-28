@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-800 py-10 md:py-16 relative z-0">
+  <div id="about" class="bg-gray-800 py-10 md:py-16 relative z-0">
     <div class="o-container">
       <div class="md:flex justify-between">
         <div class="w-full md:w-3/12 pb-8 md:pb-0">

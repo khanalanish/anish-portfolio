@@ -1,8 +1,8 @@
 <template>
   <div class="relative">
     <Header />
-    <Banner @next-component="handleNextComponent" />
-    <AboutMe ref="aboutMe" />
+    <Banner />
+    <AboutMe />
     <Resume />
     <ProjectsView />
     <ContactView />
@@ -35,13 +35,6 @@ export default {
     Resume,
     ProjectsView,
     ContactView
-  },
-  methods: {
-    handleNextComponent() {
-      this.$nextTick(() => {
-        this.$refs.aboutMe.$el.scrollIntoView({ behavior: 'smooth' })
-      })
-    }
   }
 }
 </script>
