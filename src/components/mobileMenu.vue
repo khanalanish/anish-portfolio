@@ -31,20 +31,13 @@
         class="fixed bg-gray-800 top-0 right-0 left-0 z-30 bottom-0 inset-x-0 transition lg:hidden"
       >
         <ul class="pt-16">
-          <li class="px-4 py-3 text-sm">
-            <a href="#home" class="font-bold text-white block">Home</a>
-          </li>
-          <li class="px-4 py-3">
-            <a href="#about" class="font-bold text-white block">About</a>
-          </li>
-          <li class="px-4 py-3">
-            <a href="#resume" class="font-bold text-white block">Resume</a>
-          </li>
-          <li class="px-4 py-3">
-            <a href="#portfolio" class="font-bold text-white block">Works</a>
-          </li>
-          <li class="px-4 py-3">
-            <a href="#contact" class="font-bold text-white block">Contact</a>
+          <li v-for="item in items" :key="item.name" class="px-4 py-3 text-sm">
+            <a
+              @click.prevent="navigateAndCloseMenu(item.link)"
+              href="#"
+              class="font-bold text-white block"
+              >{{ item.name }}</a
+            >
           </li>
         </ul>
       </div>
@@ -56,7 +49,25 @@
 export default {
   data() {
     return {
-      isMenuOpen: false
+      isMenuOpen: false,
+      items: [
+        { name: 'Home', link: '#home' },
+        { name: 'About', link: '#about' },
+        { name: 'Resume', link: '#resume' },
+        { name: 'Works', link: '#portfolio' },
+        { name: 'Contact', link: '#contact' }
+      ]
+    }
+  },
+  methods: {
+    navigateAndCloseMenu(targetId) {
+      this.$nextTick(() => {
+        const targetElement = document.querySelector(targetId)
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' })
+        }
+        this.isMenuOpen = false
+      })
     }
   }
 }
