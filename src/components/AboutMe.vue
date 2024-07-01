@@ -37,10 +37,10 @@
             </div>
             <div class="md:w-1/2 mt-6">
               <div class="flex">
-                <a href="" target="blank" class="c-btn">
+                <button @click="downloadResume" class="c-btn">
                   <font-awesome-icon :icon="['fas', 'download']" />
                   <span class="pl-2">Download Resume</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -51,10 +51,21 @@
 </template>
 <script>
 import headshot from '../assets/images/headshot.png'
+import resume from '../assets/anish-resume.pdf'
 export default {
   data() {
     return {
       imageSrc: headshot
+    }
+  },
+  methods: {
+    downloadResume() {
+      const link = document.createElement('a')
+      link.href = resume
+      link.setAttribute('download', 'Resume.pdf')
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
     }
   }
 }
