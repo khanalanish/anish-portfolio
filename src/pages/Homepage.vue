@@ -14,7 +14,7 @@
 <script>
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
-import Banner from '../components/banner.vue'
+import Banner from '../components/Banner.vue'
 import AboutMe from '../components/AboutMe.vue'
 import Resume from '../components/Resume.vue'
 import ProjectsView from '../components/ProjectsView.vue'
