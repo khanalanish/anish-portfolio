@@ -6,7 +6,7 @@
           <div class="flex justify-center mb-6">
             <ul class="flex space-x-6">
               <li class="" v-for="media in social" :key="media.name">
-                <a class="w-6 h-6 md:w-10 md:h-10" :href="media.url"
+                <a class="w-6 h-6 md:w-10 md:h-10" :href="media.url" target="_blank"
                   ><font-awesome-icon
                     :icon="['fab', media.icon]"
                     class="text-white p-2 md:p-6 rounded-full bg-gray-700"

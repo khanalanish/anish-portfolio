@@ -25,7 +25,7 @@
           </div>
           <ul class="flex justify-center space-x-4 text-white pt-4">
             <li class="" v-for="media in social" :key="media.name">
-              <a class="w-8 h-8 md:w-14 md:h-14" :href="media.url"
+              <a class="w-8 h-8 md:w-14 md:h-14" :href="media.url" target="_blank"
                 ><font-awesome-icon :icon="['fab', media.icon]" class=""
               /></a>
             </li>
