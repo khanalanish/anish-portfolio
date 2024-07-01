@@ -45,7 +45,6 @@ export default {
       this.$nextTick(() => {
         const element = document.getElementById(componentId)
         if (element) {
-          console.log('true')
           element.scrollIntoView({ behavior: 'smooth' })
           setTimeout(() => {
             window.location.hash = componentId
