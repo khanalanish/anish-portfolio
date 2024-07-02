@@ -19,7 +19,7 @@
             <h2 class="font-semibold text-xl md:text-3xl pb-2" v-html="list.subtitle"></h2>
             <div class="flex flex-wrap items-center text-sm">
               <p v-html="list.title"></p>
-              <p v-if="list.date" class="w-1 h-1 bg-gray-800 mx-2"></p>
+              <!-- <p v-if="list.date" class="w-1 h-1 bg-gray-800 mx-2"></p> -->
               <p v-html="list.date"></p>
             </div>
             <div class="c-list" v-if="list.description" v-html="list.description"></div>
