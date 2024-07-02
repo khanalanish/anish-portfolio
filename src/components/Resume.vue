@@ -1,5 +1,5 @@
 <template>
-  <div id="resume" class="py-10 md:py-16">
+  <div id="resume" class="py-10 md:py-16 bg-white">
     <div class="o-container">
       <div
         class="w-full md:flex justify-between border-b last:border-none border-gray-300 first:pt-0 pt-6"
