@@ -23,7 +23,9 @@
             </a>
           </div>
         </div>
-        <button class="w-6 h-6 md:w-10 md:h-10 absolute -top-4 text-white left-1/2">
+        <button
+          class="w-6 h-6 md:w-10 md:h-10 absolute -top-4 text-white left-1/2 -translate-x-1/2"
+        >
           <a
             href="#"
             @click.prevent="handleScroll"
