@@ -18,11 +18,15 @@
         <div class="md:w-8/12 text-white">
           <div class="text-2xl font-semibold pb-6">About Me</div>
           <div class="text-gray-600 text-base mb-10">
-            A Computer Engineer graduate passionate in software development with preferences in
-            Frontend development and blockchain tecgnologies and basic aim is to associate with an
-            organization that progresses dynamically and gives me chance to update my knowledge and
-            enhance my skills in every prospectives of Computer engineering field and be a part of
-            the team that excels in work towards the growth of organization.
+            Experienced front-end developer with over three years of hands-on experience creating
+            responsive web applications. Proficient in HTML, CSS, and JavaScript, with a deep
+            understanding of modern frameworks such as React, Alpine Js, and Vue.js. Skilled in
+            translating design mockups and wireframes into high-quality code, ensuring cross-browser
+            compatibility and optimal performance. Strong background in implementing user interfaces
+            that are both visually appealing and functional. Proven ability to collaborate with
+            cross-functional teams to deliver projects on time and according to specifications.
+            Seeking to leverage technical expertise and creativity in a dynamic development
+            environment.
           </div>
           <div class="md:flex justify-between">
             <div class="md:w-1/2">
