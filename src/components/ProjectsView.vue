@@ -42,6 +42,7 @@ import humanForce from '../assets/images/portfolio/humanForce.png'
 import bingo from '../assets/images/portfolio/bingo.png'
 import hrBlock from '../assets/images/portfolio/hrBlock.png'
 import bossEnergy from '../assets/images/portfolio/bossEnergy.png'
+import cooltex from '../assets/images/portfolio/cooltex.png'
 export default {
   data() {
     return {
@@ -80,6 +81,13 @@ export default {
           imageSrc: bossEnergy,
           hasLink: true,
           link: 'https://bossenergy.com/'
+        },
+        {
+          title: 'Cooltex',
+          description: '',
+          imageSrc: cooltex,
+          hasLink: true,
+          link: 'https://cooltex.homes/'
         }
       ]
     }

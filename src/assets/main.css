@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .o-container {
-  max-width: 100%;
+  max-width: 1444px;
   @apply mx-auto px-4;
 }
 
